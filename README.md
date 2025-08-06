@@ -1,0 +1,1 @@
+"You can download the plant disease leaf datasets for training and validation from Kaggle. The dataset includes more than 24 classes. Once you've added these files, you can run the code to verify that it works correctly."
