@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+{% for n in servicedata %}
+
+<div class="col-lg-4 col-md-6">
+   <div class="single-feature mb-30">
+        <div class="title d-flex flex-row pb-20">
+          <span class="{{n.service_icon}}"></span>
+          <h4><a href="#"  >  {{n.service_title | safe}}  </a></h4>
+        </div>
+
+   </div>
+   </div>
+       <img src="/static/plantImage.jpg" width="1500px" height="400px" />
+
+
+        <p>
+            {{n.service_des | safe}}
+        </p>
+        <div class="fullscreen-box" >
+        <p><h3>Leaves are one of the most important parts of a plant, often called the “food factories” because they make food through photosynthesis. They absorb sunlight and use it, along with water and carbon dioxide, to produce glucose, which provides energy for the plant’s growth and survival. Leaves also release oxygen into the air, which is essential for humans and animals to breathe. In addition, they help regulate temperature, reduce water loss, and protect the plant from harsh weather. Without healthy leaves, a plant cannot thrive, making them vital for both plant life and the balance of nature.</h3></p>
+
+
+</div>
+ {% endfor %}   
+
+
+
+
+
+
+{% endblock  %}
+

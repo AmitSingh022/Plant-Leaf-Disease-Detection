@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div>
+ <form method="post"  enctype="multipart/form-data"  action="{% url 'contactus' %}" >
+
+{% csrf_token  %}
+
+
+
+<div class="mb-4">
+  <label  class="form-label">upload file</label>
+  <input type="file" class="form-control" name="image">
+</div>
+<input  type="submit"  value="predict">
+</form> 
+</div>
+
+                      <div>
+
+                          <div width="100px">
+                              <p>{{ im.name }}</p>
+                              <img src="{{ im.image.url }}" width="200">
+                          </div>
+
+                      </div> 
+<h1>Your plant disease name is : </h1>
+
+<div><h2>{{prediction}}</h2></div>
+
+
+
+ 
+
+
+{% endblock  %}
