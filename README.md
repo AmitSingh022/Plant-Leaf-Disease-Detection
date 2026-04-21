@@ -6,7 +6,7 @@ The model is trained on a Kaggle Plant Leaf Disease dataset containing 24+ class
 📌 Features
 
 Upload plant leaf image
-Predict disease using trained CNN / MobileNetV2 model
+Predict disease using trained CNN
 Supports 24+ plant disease classes
 Django-based web interface
 Image upload & preview
